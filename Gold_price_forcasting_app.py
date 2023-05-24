@@ -17,7 +17,7 @@ from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 warnings.filterwarnings('ignore', message='X does not have valid feature names')
   
-loaded_model = pickle.load(open('final_model1.sav'))
+loaded_model = pickle.load(open('final_model1.sav','rb'))
 
 df_gold1 = pd.read_csv("gold_ext.csv")
 df_stock = pd.read_csv("stock_price_gold.csv")
